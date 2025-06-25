@@ -8,44 +8,100 @@
 </head>
 <body>
     <h1>Consultar CEP</h1>
-    <form class="container">
+    <form class="row g-3">
         <!-- CEP -->
-        <label class="form-label" for="">CEP</label>
-        <input class="form-control" type="number" name="CEP" id="CEP">
+         
+        <div class="col-md-2">
+
+            <label class="form-label" for="cep">CEP</label>
+            <input class="form-control col" type="number" name="cep" id="cep" onblur="consultarCep()">
+        </div>
         
         <!-- RUA -->
-        <label class="form-label" for="rua">Logadouro</label>
-        <input class="form-control" type="text" name="rua" id="rua">
+         <div class="col-md-6">
+
+             <label class="form-label" for="rua">Logadouro</label>
+             <input class="form-control col" type="text" name="rua" id="rua">
+         </div>
 
         <!-- NÚMERO -->
-        <label class="form-label" for="">Nº</label>
-        <input class="form-control" type="number" name="numero" id="numero">
+         <div class="col-md-1">
 
-        <!-- Bairro -->
-        <label class="form-label" for="bairro">Bairro</label>
-        <input class="form-control" type="text" name="bairro" id="bairro">
+             <label class="form-label" for="">Nº</label>
+             <input class="form-control" type="number" name="numero" id="numero">
+         </div>
+
+                 <!-- Bairro -->
+
+        <div class="col-md-10">
+
+            <label class="form-label" for="bairro">Bairro</label>
+            <input class="form-control" type="text" name="bairro" id="bairro">
+        </div>
+
+
+
+         <div class="col-md-7">
+            <div class="col-md-10">
+
+                <label class="form-label" for="complemento">Complemento</label>
+                <input class="form-control" type="text" name="complemento" id="complemento">
+            </div>
+         </div>
 
         <!-- Cidade -->
-        <label class="form-label" for="cidade">Cidade</label>
-        <select class="form-select" name="cidade" id="cidade" aria-label="Default select example">
-            <option selected>Escolha</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+         <div class="col-md-3">
+
+             <label class="form-label" for="cidade">Cidade</label>
+             <select class="form-select" name="cidade" id="cidade" aria-label="Default select example">
+                 <option selected>Escolha</option>
+                 <option value="1">One</option>
+                 <option value="2">Two</option>
+                 <option value="3">Three</option>
+               </select>
+         </div>
 
           <!-- estado -->
-        <label class="form-label" for="estado">UF</label>
-        <select class="form-select" name="estado" id="estado" aria-label="Default select example">
-            <option selected>Escolha</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+           <div class="col-md-2">
+
+               <label class="form-label" for="estado">UF</label>
+               <select class="form-select" name="estado" id="estado" aria-label="Default select example">
+                <option value="AC">Acre (AC)</option>
+                <option value="AL">Alagoas (AL)</option>
+                <option value="AP">Amapá (AP)</option>
+                <option value="AM">Amazonas (AM)</option>
+                <option value="BA">Bahia (BA)</option>
+                <option value="CE">Ceará (CE)</option>
+                <option value="DF">Distrito Federal (DF)</option>
+                <option value="ES">Espírito Santo (ES)</option>
+                <option value="GO">Goiás (GO)</option>
+                <option value="MA">Maranhão (MA)</option>
+                <option value="MT">Mato Grosso (MT)</option>
+                <option value="MS">Mato Grosso do Sul (MS)</option>
+                <option value="MG">Minas Gerais (MG)</option>
+                <option value="PA">Pará (PA)</option>
+                <option value="PB">Paraíba (PB)</option>
+                <option value="PR">Paraná (PR)</option>
+                <option value="PE">Pernambuco (PE)</option>
+                <option value="PI">Piauí (PI)</option>
+                <option value="RJ">Rio de Janeiro (RJ)</option>
+                <option value="RN">Rio Grande do Norte (RN)</option>
+                <option value="RS">Rio Grande do Sul (RS)</option>
+                <option value="RO">Rondônia (RO)</option>
+                <option value="RR">Roraima (RR)</option>
+                <option value="SC">Santa Catarina (SC)</option>
+                <option value="SP">São Paulo (SP)</option>
+                <option value="SE">Sergipe (SE)</option>
+                <option value="TO">Tocantins (TO)</option>
+                 </select>
+           </div>
 
         
-        <button class="btn">Enviar</button>
-        <button class="btn">Limpar</button>
+           <div>
+
+               <button class="btn btn-success">Enviar</button>
+               <button class="btn btn-warning" type="reset">Limpar</button>
+           </div>
         
 
         
